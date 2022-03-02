@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Release in this {{movie.release_year}} </h5>
+      <p class="card-text">We have {{movie.number_in_stock}} available in own stock!</p>
+      <div class="card-footer bg-transparent border-success">Contact us righ now! <span class=""><br> Call (55) 3266-3652</span></div>
+    </div>
+  </div>
+{% endblock  %}
