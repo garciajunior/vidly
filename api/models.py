@@ -11,6 +11,7 @@ class MovieResource(ModelResource):
         resource_name = 'movies'
         fields = ['title', 'release_year', 'number_in_stock', 'year',
                   'daily_rate', 'genre', 'date_created', 'update_at', ]
+        exclude = ['date_created', 'update_at', ]
         allowed_methods = ['get']
         filtering = {
             'title': ('exact', 'startswith'),
