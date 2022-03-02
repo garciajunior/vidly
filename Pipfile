@@ -4,7 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==2.1"
+django = "==2.1.5"
+pylint-django = "*"
+django-tastypie = "*"
 
 [dev-packages]
 autopep8 = "*"
